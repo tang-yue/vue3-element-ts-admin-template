@@ -1,13 +1,14 @@
 
 <script lang="tsx">
 import { defineComponent } from 'vue'
-import { RouterView } from "vue-router";
 export default defineComponent({
     props: {},
     emits: [],
     components: {},
     setup(props, ctx) {
-      return () => <RouterView />
+      return () => <div>
+        home home222
+      </div>
     }
 })
 // This starter template is using Vue 3 <script setup> SFCs

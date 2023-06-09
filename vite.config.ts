@@ -1,21 +1,19 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import { resolve } from "path"
+import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueJsx()
-  ],
+  plugins: [vue(), vueJsx()],
   server: {
-    host: "0.0.0.0",
+    host: '0.0.0.0',
     port: 8888
   },
+  base: '/basepath/',
   resolve: {
     alias: {
-      "@": resolve(__dirname, "/src")
+      '@': resolve(__dirname, '/src')
     }
   }
 })

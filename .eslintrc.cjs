@@ -11,21 +11,21 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended', 
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended'
   ],
   rules: {
     // 项目初始化vite-env.d.ts会报的错
-    "@typescript-eslint/ban-types": [
-      "error",
+    '@typescript-eslint/ban-types': [
+      'error',
       {
-        "extendDefaults": true,
-        "types": {
-          "{}": false
+        extendDefaults: true,
+        types: {
+          '{}': false
         }
       }
     ],
     // 可以使用any类型
-    "@typescript-eslint/no-explicit-any": 'off'
+    '@typescript-eslint/no-explicit-any': 'off'
   }
 }
